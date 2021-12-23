@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!--
+    相对布局
+    layout_centerInParent 位于父类中间
+    layout_alignParentLeft 位于父类左侧
+    layout_alignParentRight 位于父类右侧
+    layout_alignParentTop   位于父类顶部
+    layout_alignParentBottom    位于父类底部
+    layout_centerVertical   垂直中间
+    layout_centerHorizontal 水平中间
+    -->
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentLeft="true"
+        android:background="#ff0000"
+        android:text="屏幕左上"
+        android:textSize="30sp" />
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:background="#ff0000"
+        android:text="屏幕顶部"
+        android:textSize="30sp" />
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentRight="true"
+        android:background="#ff0000"
+        android:text="屏幕右上"
+        android:textSize="30sp" />
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:background="#ff0000"
+        android:text="屏幕左侧"
+        android:textSize="30sp" />
+
+    <!--
+        layout_toLeftOf(id/xx) 基于xx的左侧对齐(外侧)
+        layout_toRightOf(id/xx)基于xx的右侧对齐(外侧)
+        layout_above(id/xx)    基于xx的顶部对齐(外侧)
+        layout_below(id/xx)    基于xx的底部对齐(外侧)
+
+        layout_alignLeft(id/xx)    基于xx的左侧对齐(内侧)
+        layout_alignRight(id/xx)    基于xx的右侧对齐(内侧)
+        layout_alignTop(id/xx)    基于xx的顶部对齐(内侧)
+        layout_alignBottom(id/xx)    基于xx的底部对齐(内侧)
+    -->
+
+    <TextView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_below="@+id/center"
+        android:layout_toLeftOf="@+id/center"
+        android:background="#00ff00"
+        android:text="test"
+        android:textSize="30sp"
+        />
+
+    <TextView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:text="test2"
+        android:textSize="30sp"
+        android:background="#0000FF"
+        android:layout_alignBottom="@+id/center"/>
+
+    <TextView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:text="test2"
+        android:textSize="30sp"
+        android:background="#FF00FF"
+        android:layout_below="@+id/center"/>
+
+    <TextView
+        android:id="@+id/center"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerInParent="true"
+        android:background="#ff0000"
+        android:text="屏幕正中"
+        android:textSize="30sp" />
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:background="#ff0000"
+        android:text="屏幕右侧"
+        android:textSize="30sp" />
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:background="#ff0000"
+        android:text="屏幕左下"
+        android:textSize="30sp" />
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:background="#ff0000"
+        android:text="屏幕右下"
+        android:textSize="30sp" />
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:background="#ff0000"
+        android:text="屏幕底部"
+        android:textSize="30sp" />
+
+</RelativeLayout>

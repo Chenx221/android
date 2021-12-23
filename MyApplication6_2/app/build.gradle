@@ -3,18 +3,16 @@ plugins {
 }
 
 android {
-    compileSdk 31
+    compileSdk 32
 
     defaultConfig {
-        applicationId "cyou.chenx221.myapp"
+        applicationId "cyou.chenx221.myapplication62"
         minSdk 21
-        targetSdk 31
+        targetSdk 32
         versionCode 1
         versionName "1.0"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
-        targetSdkVersion 31
-        minSdkVersion 16
     }
 
     buildTypes {
