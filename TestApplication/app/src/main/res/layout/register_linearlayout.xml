@@ -2,59 +2,90 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:background="@mipmap/bg"
-    android:gravity="center_horizontal">
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Sign Up"
-        android:layout_marginTop="70dp"/>
+        android:layout_marginTop="70dp"
+        android:text="@string/title_text"
+        android:textSize="40sp" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="我也不知道这个文本框该输入点什么\n233333"
         android:layout_margin="20dp"
-        android:gravity="center_horizontal"/>
+        android:gravity="center_horizontal"
+        android:text="@string/notice" />
 
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_margin="10dp"
         android:src="@mipmap/add_photo"
-        android:layout_margin="10dp"/>
+        android:contentDescription="@string/add_photo_tips" />
+    <!--
+    android:inputType 设定输入类型
+    textPassword 密码
+    number 数字（正整数）
+    numberDecimal 数字（支持小数）
+    numberSigned 数字（支持符号位）
+    numberSigned|numberDecimal 以上两者兼有
+
+    -->
 
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="30dp"
-        android:layout_marginTop="40dp"/>
+        android:layout_marginTop="40dp"
+        android:gravity="center_horizontal"
+        android:hint="@string/full_name"
+        android:inputType="text"
+        android:textColorHint="#00cccc"
+        android:autofillHints="name" />
 
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="30dp"
-        android:layout_marginTop="40dp"/>
+        android:layout_marginTop="40dp"
+        android:gravity="center_horizontal"
+        android:hint="@string/email_address"
+        android:inputType="textEmailAddress"
+        android:textColorHint="#00cccc"
+        android:autofillHints="emailAddress" />
 
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="30dp"
-        android:layout_marginTop="40dp"/>
+        android:layout_marginTop="40dp"
+        android:gravity="center_horizontal"
+        android:hint="@string/phone_number"
+        android:inputType="phone"
+        android:textColorHint="#00cccc"
+        android:autofillHints="phone" />
 
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="30dp"
-        android:layout_marginTop="40dp"/>
+        android:layout_marginTop="40dp"
+        android:gravity="center_horizontal"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        android:maxLength="12"
+        android:textColorHint="#00cccc"
+        android:autofillHints="password" />
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="30dp"
         android:layout_marginTop="40dp"
-        android:text="Register"
         android:background="@mipmap/btn"
-        />
+        android:text="@string/submit_button" />
 </LinearLayout>
