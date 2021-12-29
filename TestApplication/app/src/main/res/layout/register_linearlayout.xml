@@ -38,48 +38,52 @@
 
     <EditText
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="68dp"
         android:layout_marginHorizontal="30dp"
-        android:layout_marginTop="40dp"
-        android:gravity="center_horizontal"
+        android:layout_marginTop="25dp"
+        android:gravity="center"
         android:hint="@string/full_name"
         android:inputType="text"
         android:textColorHint="#00cccc"
-        android:autofillHints="name" />
+        android:autofillHints="name"
+        android:background="@mipmap/editimg"/>
 
     <EditText
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="68dp"
         android:layout_marginHorizontal="30dp"
-        android:layout_marginTop="40dp"
-        android:gravity="center_horizontal"
+        android:layout_marginTop="25dp"
+        android:gravity="center"
         android:hint="@string/email_address"
         android:inputType="textEmailAddress"
         android:textColorHint="#00cccc"
-        android:autofillHints="emailAddress" />
+        android:autofillHints="emailAddress"
+        android:background="@mipmap/editimg" />
 
     <EditText
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="68dp"
         android:layout_marginHorizontal="30dp"
-        android:layout_marginTop="40dp"
-        android:gravity="center_horizontal"
+        android:layout_marginTop="25dp"
+        android:gravity="center"
         android:hint="@string/phone_number"
         android:inputType="phone"
         android:textColorHint="#00cccc"
-        android:autofillHints="phone" />
+        android:autofillHints="phone"
+        android:background="@mipmap/editimg"/>
 
     <EditText
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="68dp"
         android:layout_marginHorizontal="30dp"
-        android:layout_marginTop="40dp"
-        android:gravity="center_horizontal"
+        android:layout_marginTop="25dp"
+        android:gravity="center"
         android:hint="@string/password"
         android:inputType="textPassword"
         android:maxLength="12"
         android:textColorHint="#00cccc"
-        android:autofillHints="password" />
+        android:autofillHints="password"
+        android:background="@mipmap/editimg"/>
 
     <Button
         android:layout_width="match_parent"
